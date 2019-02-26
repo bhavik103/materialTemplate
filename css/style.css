@@ -1,0 +1,430 @@
+@font-face {
+  font-family: 'work_sansblack';
+  src: url('../fonts/worksans-black-webfont.eot');
+  src: url('../fonts/worksans-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/worksans-black-webfont.woff2') format('woff2'),
+  url('../fonts/worksans-black-webfont.woff') format('woff'),
+  url('../fonts/worksans-black-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+.header_top{
+  background-color: #364890;
+}
+
+.mdc-button:not(:disabled){
+  color: white;
+  font-weight: bolder;
+}
+
+
+
+.mdc-button:not(:disabled) {
+   color: black;
+}
+
+select{
+  border-radius: 5px;
+  background-color: white;
+}
+.mdc-list-item{
+  display: inline-block;
+  color: white;
+  height: 20px;
+}
+.contact li{
+  border-right: 1px solid white;
+  color: white;
+}
+.contact li:last-child{
+  border-right: none;
+}
+.mdc-top-app-bar__section--align-end{
+  float: right;
+  margin-top: 5px;
+}
+.header_middle{
+  background-color: white;
+  height: 150px;
+}
+
+.header_content2 a::after{
+  content: "|";
+  height: 20px;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.header_content2 alast-child::after {
+  display: none;
+}
+
+.header_middle img{
+  margin-left: 100px;
+}
+.txt_clr{
+  color: black;
+}
+.mdc-button--raised{
+/*margin:0;
+padding: 0;*/
+border: none;
+outline: none;
+border-radius: 5px;
+margin-top: 0px;
+}
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled) {
+  background-color: #fff;
+}
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled) {
+
+  color: #000;
+}
+.mdc-button--dense{
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  padding: 10px;
+  color:white;
+}
+.material-icons{
+  margin:5px;
+}
+
+.btn_signin{
+  /*background-color: #eda33a;*/
+  margin-right: 0px;
+  background-image: linear-gradient(#f5e67b,#e6a02a);
+}
+.btn_reg{
+  /*background-color: #d7363b;*/
+  margin-left: 5px;
+  background-image: linear-gradient(#ee8551,#e6573f);
+}
+
+
+.menu{
+  margin-left: 150px;
+  margin-top: 10px;
+  float: right;
+  margin-top: 50px;
+}
+
+.header_buttom{
+  background-color: #408fc8;
+
+}
+/*.search input[type=text]{
+  width: 50%;
+  height:200px;
+  padding: 10px;
+  margin: 20px;
+
+  }*/
+  .mdc-text-field{
+    box-sizing: border-box;
+    height:40px;
+    margin: 10px;
+    width: 35%;
+    margin-left: 440px;
+  }
+  .btn_letsgo{
+    background-color: #f3c458;
+    width:60%;
+    height: 100%;
+    border-radius: 0;
+    background-image: linear-gradient(#f5e67b,#e6a02a);
+  }
+
+  .banner{
+    background-image: url("../images/banner.jpg");
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-size: 100% 100%;
+
+  }
+  .img_content{
+   margin-top: 95px;
+   color: white;
+ }
+
+.mdc-dialog__actions {
+  justify-content: flex-start; 
+   
+}
+ .loginField{
+  margin: 0px;
+ }
+
+
+ .mdc-layout-grid{
+  margin:0;
+  padding: 0;
+}
+
+.holyday {
+  /*background-color:lightgray;*/
+  border:1px solid lightgray;
+}
+.holyday label{
+  margin-top: 10px;
+  margin-left: 66px;
+}
+
+.mdc-layout-grid__inner{
+  margin-bottom: 10px;
+}
+
+.mdc-typography--caption ,h3 , label{
+  text-align: center;
+}
+.holyday_txt1{
+  color:#6c4c95;
+}
+.holyday_btn1{
+  margin-bottom:15px;
+  background-color: #6c4c95;
+}
+.holyday_txt2{
+  color:#d7383c;
+}
+.holyday_btn2{
+  margin-bottom:15px;
+  background-color: #d7383c;
+}
+.holyday_txt3{
+  color:#153b86;
+}
+.holyday_btn3{
+  margin-bottom:15px;
+  background-color: #153b86;
+}
+
+.head1{
+
+  background-color: orange;
+  text-align: center;
+  border: 1px solid orange;
+  color: white;
+  text-shadow: 1px 1px;
+}
+.content1{
+
+  border: 1px solid orange;
+  padding: 12px;
+}
+.foot1{
+
+  color: orange;
+}
+.head2{
+
+  background-color: maroon;
+  text-align: center;
+  border: 1px solid maroon;
+  color: white;
+  text-shadow: 1px 1px;
+}
+.content2{
+
+  border: 1px solid maroon;
+  padding: 12px;
+}
+.foot2{
+
+  color: maroon;
+}
+.head3{
+
+  background-color: lightblue;
+  text-align: center;
+  border: 1px solid lightblue;
+  color: white;
+  text-shadow: 1px 1px;
+}
+.content3{
+
+  border: 1px solid lightblue;
+  padding: 12px;
+}
+.foot3{
+
+  color: lightblue;
+}
+.head4{
+
+  background-color: #7D3C98;
+  text-align: center;
+  border: 1px solid #7D3C98;
+  color: white;
+  text-shadow: 1px 1px;
+}
+.content4{
+
+  border: 1px solid #7D3C98;
+  padding: 12px;
+}
+.foot4{
+
+  color: #7D3C98;
+}
+.head5{
+
+  background-color: #000080;
+  text-align: center;
+  border: 1px solid #000080;
+  color: white;
+  text-shadow: 1px 1px;
+}
+.content5{
+
+  border: 1px solid #000080;
+  padding: 12px;
+}
+.foot5{
+
+  color: #000080;
+}
+
+a{
+  list-style: none;
+  text-decoration:none;
+}
+
+.header_buttom a{
+  color: white;
+  font-weight: bolder;
+}
+
+.contentHeading h2{
+  text-align: center;
+}
+
+.contentHeading h1{
+  text-align: center;
+}
+
+.section2{
+  background-color: #e3e7ed;
+  padding: 50px 0px;
+  margin: 50px 0px;
+}
+
+h2 span{
+ color: red;
+}
+
+.header_bottom span{
+ color: black;
+ font-weight: bolder;
+}
+
+.ourMission h2 span{
+  color: blue;
+}
+
+.imagePerson img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  margin-top: 9px;
+}
+
+
+.contentMission p{
+  justify-content: center;
+}
+
+.mdc-card{
+  border: 1px solid black;
+}
+
+.card_content{
+  margin-left: 10px;
+}
+
+.btn1{
+  background-color:#d8343b;
+  margin-bottom: 20px;
+}
+.btn2{
+  background-color:#e4a734;
+  background-image: linear-gradient(#f5e67b,#e6a02a);
+  margin-bottom: 20px;
+}
+.btn3{
+  background-color:#2583c1;
+  margin-bottom: 20px;
+}
+
+.footer{
+  background-color: #3f3f41;
+  margin-top: 50px;
+}
+.footer_about{
+  color:#fee06c;
+}
+.f_about_p{
+  color: white;
+}
+.f_img{
+  margin-top: 13px;
+}
+.footer_destination{
+  color: #ed8f4f;
+}
+.f_margin{
+  margin-top: -25px;
+}
+.f_title1{
+  color:#ffdb77;
+}
+.f_title3{
+  color: #d33e58;
+}
+.f_title4{
+  color: #6d568b;
+}
+.f_title5{
+  color: #7679db;
+}
+.f_title6{
+  color: #6fa5ce;
+}
+.footer_bottom{
+  background-color: #38383a;
+}
+
+.recentTravel img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  margin-top: 9px;
+}
+
+.recentTravel h3{
+  color: red;
+}
+
+.recentTravel p span{
+  color: grey;
+}
+.recentTravel{
+  text-align: center;
+}
+
+.recentTravel p{
+  margin: 10px 400px ;
+}
+

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Holiday Travel</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header_top">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <ul class="mdc-list contact">
+          <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__text ">Call 1800 22 7979</span>
+          </li>
+
+          <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__text ">Select Currency:
+
+              <select>
+                <option value="volvo">INR</option>
+                <option value="saab">Dollar</option>
+                <option value="opel">Euro</option>
+              </select>
+
+            </span>
+          </li>
+
+
+
+        </ul>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+        <button class="mdc-button btn_signin" id="b1">
+          <span class="mdc-button__label">SIGN IN</span>
+        </button>
+
+        <form class="pure-form">
+          <div class="mdc-dialog"
+          role="alertdialog"
+          aria-modal="true"
+          aria-labelledby="my-dialog-title"
+          aria-describedby="my-dialog-content">
+          <div class="mdc-dialog__container">
+            <div class="mdc-dialog__surface">
+              <h2 class="mdc-dialog__title" id="my-dialog-title">Sign In</h2>
+              <div class="mdc-dialog__content" id="my-dialog-content">
+
+                <div class="mdc-text-field username loginField">
+                  <input type="text" id="username" class="mdc-text-field__input">
+                  <label class="mdc-floating-label" for="my-text-field">User Name</label>
+                  <div class="mdc-line-ripple"></div>
+                </div>
+
+                <div class="mdc-text-field password loginField">
+                  <input type="text" id="password" class="mdc-text-field__input">
+                  <label class="mdc-floating-label" for="my-text-field">Password</label>
+                  <div class="mdc-line-ripple"></div>
+                </div>
+
+              </div>
+              <footer class="mdc-dialog__actions">
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no" class="buttonDialog">
+                  <span class="mdc-button__label">Cancel</span>
+                </button>
+                <button type="submit" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes">
+                  <span class="mdc-button__label">Submit</span>
+                </button>
+              </footer>
+            </div>
+          </div>
+          <div class="mdc-dialog__scrim"></div>
+        </form>
+      </div>
+
+      <button class="mdc-button btn_reg" id="b2">
+        <span class="mdc-button__label" >REGISTER</span>
+      </button>
+      <form class="register-form">
+        <div class="mdc-dialog registerDialog"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="my-dialog-title"
+        aria-describedby="my-dialog-content">
+        <div class="mdc-dialog__container">
+          <div class="mdc-dialog__surface">
+            <h2 class="mdc-dialog__title" id="my-dialog-title"> Sign Up</h2>
+            <div class="mdc-dialog__content" id="my-dialog-content">
+
+              <div class="mdc-text-field fname loginField">
+                <input type="text" id="fname" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">First Name</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+              
+              <div class="mdc-text-field lname loginField">
+                <input type="text" id="lname" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">Last Name</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field email loginField">
+                <input type="text" id="email" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">Email</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+              <div class="mdc-text-field p1 loginField">
+                <input type="text" id="pword" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">Password</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+
+            </div>
+            <footer class="mdc-dialog__actions">
+              <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no" class="buttonDialog">
+                <span class="mdc-button__label">Cancel</span>
+              </button>
+              <button type="submit" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes">
+                <span class="mdc-button__label">Submit</span>
+              </button>
+            </footer>
+          </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+      </form>
+    </section>
+
+  </div>  
+</header>
+</div>
+
+
+<div class="header_middle">
+
+  <img src="images/logo.png" height="170px" width="170px">
+  <ul class="mdc-list menu">
+    <li class="mdc-list-item" tabindex="0">
+      <a href="#"><span class="mdc-list-item__text txt_clr">International Tours</span></a>
+    </li>
+    <li class="mdc-list-item">
+      <a href="#"><span class="mdc-list-item__text txt_clr">India Tours</span></a>
+
+    </li>
+    <li class="mdc-list-item">
+      <a href="#"><span class="mdc-list-item__text txt_clr">Speciality Tours</span></a>
+
+    </li>
+    <li class="mdc-list-item">
+      <a href="#"><span class="mdc-list-item__text txt_clr">Place To Visit</span></a>
+
+    </li>
+    <li class="mdc-list-item">
+      <a href="#"><span class="mdc-list-item__text txt_clr">Blog</span></a>
+
+    </li>
+    <li class="mdc-list-item">
+     <a href="#"> <span class="mdc-list-item__text txt_clr">Contact</span></a>
+
+   </li>
+
+ </ul>
+
+
+</div>
+
+<div class="header_buttom">
+
+  <div class="mdc-text-field   mdc-text-field--no-label">
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i> -->
+    <input type="text" id="my-text-field" class="mdc-text-field__input" placeholder="Where Would you like to go?" aria-label="Label">
+    <button class="mdc-button--dense btn_letsgo">
+      <a href=""><span class="mdc-button__label">Let's Go</span></a>
+    </button>
+
+
+  </div>
+</div>
+
+<div class="banner">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-2"></div>
+    <div class="mdc-layout-grid__cell--span-4">
+      <div class="img_content">
+        <h1 class="mdc-typography--headline4">SUMMER OFFERS</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section1">
+  <div class="contentHeading">
+    <h2>Featured  Travel <span > Destination </span></h2>
+    <h1><span>_ </span>_ <span>_ </span></h1>
+  </div>
+  <div class="mdc-layout-grid gridPart">
+    <div class="mdc-layout-grid__inner">
+
+      <div class="mdc-layout-grid__cell--span-1">
+
+
+      </div>
+      <div class="mdc-layout-grid__cell--span-2">
+        <div class="head1">
+          <h2>Asia</h2>
+
+        </div>
+        <div class="content1">
+          <a href="#"><p> > Las Vegas</p></a>
+          <a href="#"><p> > Los Angeles</p></a>
+          <a href="#"><p> > New York</p></a>
+          <a href="#"><p> > Orlando</p></a>
+          <a href="#"><p> > SanFranciso</p></a>
+          <a href="#"><p> > Washington DC</p></a>
+          <p class="foot1"> > + View More</p>
+        </div>
+
+
+
+      </div>
+      <div class="mdc-layout-grid__cell--span-2">
+        <div class="head2">
+          <h2>America</h2>
+
+        </div>
+        <div class="content2">
+          <a href="#"><p> > Las Vegas</p></a>
+          <a href="#"><p> > Los Angeles</p></a>
+          <a href="#"><p> > New York</p></a>
+          <a href="#"><p> > Orlando</p></a>
+          <a href="#"><p> > SanFranciso</p></a>
+          <a href="#"><p> > Washington DC</p></a>
+          <p class="foot2"> > + View More</p>
+        </div>
+
+      </div>
+      <div class="mdc-layout-grid__cell--span-2">
+        <div class="head3">
+          <h2>Europe</h2>
+
+        </div>
+        <div class="content3">
+         <a href="#"><p> > Las Vegas</p></a>
+         <a href="#"><p> > Los Angeles</p></a>
+         <a href="#"><p> > New York</p></a>
+         <a href="#"><p> > Orlando</p></a>
+         <a href="#"><p> > SanFranciso</p></a>
+         <a href="#"><p> > Washington DC</p></a>
+         <p class="foot3"> > + View More</p>
+       </div>
+     </div>
+     <div class="mdc-layout-grid__cell--span-2">
+      <div class="head4">
+        <h2>Africa</h2>
+
+      </div>
+      <div class="content4">
+        <a href="#"><p> > Las Vegas</p></a>
+        <a href="#"><p> > Los Angeles</p></a>
+        <a href="#"><p> > New York</p></a>
+        <a href="#"><p> > Orlando</p></a>
+        <a href="#"><p> > SanFranciso</p></a>
+        <a href="#"><p> > Washington DC</p></a>
+        <p class="foot4"> > + View More</p>
+      </div>
+
+
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="head5">
+        <h2>Australia</h2>
+
+      </div>
+      <div class="content5">
+        <a href="#"><p> > Las Vegas</p></a>
+        <a href="#"><p> > Los Angeles</p></a>
+        <a href="#"><p> > New York</p></a>
+        <a href="#"><p> > Orlando</p></a>
+        <a href="#"><p> > SanFranciso</p></a>
+        <a href="#"><p> > Washington DC</p></a>
+        <p class="foot5"> > + View More</p>
+      </div>
+
+
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-1">
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section2">
+
+  <div class="contentHeading  ourMission">
+    <h2>Our <span>Mission</span></h2>
+    <h1><span>_ </span>_ <span>_ </span></h1>
+  </div>
+
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-1">
+
+
+      </div>
+      <div class="mdc-layout-grid__cell--span-3 imagePerson">
+        <img src="images/person.jpg" >
+
+
+      </div>
+
+      <div class="mdc-layout-grid__cell--span-7 contentMission">
+        <h4> About Us</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="mdc-layout-grid__cell--span-1">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contentHeading">
+  <h2>India<span >Tours</span></h2>
+  <h1><span>_ </span>_ <span>_ </span></h1>
+</div>
+
+<div class="mdc-layout-grid card">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-2">
+
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div claas="mdc-card card_box" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image " src="images/1.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Jammu Kashmir</h5>
+          <p class="card-text"><span>></span>Ladakh<span></span><span></span></p>
+          <button class="mdc-button--dense btn1">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <div claas="mdc-card" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="images/2.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Jammu Kashmir</h5>
+          <p class="card-text"><span></span><span></span>Ladakh<span></span></p>
+          <button class="mdc-button--dense btn2">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <div claas="mdc-card" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="images/3.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Andaman Tour Packages</h5>
+          <p class="card-text"><span></span>Port Blair<span></span>HaveLock<span></span>Neil Isaland</p>
+          <button class="mdc-button--dense btn3">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-2">
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="mdc-layout-grid card">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-2">
+
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div claas="mdc-card card_box" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image " src="images/4.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Jammu Kashmir</h5>
+          <p class="card-text"><span>></span>Ladakh<span></span><span></span></p>
+          <button class="mdc-button--dense btn1">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <div claas="mdc-card" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="images/5.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Jammu Kashmir</h5>
+          <p class="card-text"><span></span><span></span>Ladakh<span></span></p>
+          <button class="mdc-button--dense btn2">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+      <div claas="mdc-card" style="border: 1px solid lightgray;">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="images/6.jpeg">
+        </div>
+        <div class="card_content">
+          <h5 class="card-title">Andaman Tour Packages</h5>
+          <p class="card-text"><span></span>Port Blair<span></span>HaveLock<span></span>Neil Isaland</p>
+          <button class="mdc-button--dense btn3">
+            <span class="mdc-button__label">READ MORE</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-2">
+
+
+    </div>
+
+  </div>
+</div>
+
+<div class="section3">
+
+  <div class="contentHeading">
+    <h2>Best Selling<span> Holidays</span></h2>
+    <h1><span>_ </span>_ <span>_ </span></h1>
+  </div>
+
+
+  <div class="mdc-layout-grid__inner">
+
+    <div class="mdc-layout-grid__cell--span-2">
+
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-3">
+
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="holyday">
+        <label>(3N/4D)</label>
+        <h3 class="holyday_txt1">Rs.6800</h3>
+        <p class="mdc-typography--caption">Per Person</p>
+        <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+        <center><button class="mdc-button--dense holyday_btn1">
+          <span class="mdc-button__label ">VIEW MORE</span>
+        </button></center>
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="holyday">
+        <label>(3N/4D)</label>
+        <h3 class="holyday_txt2">Rs.6800</h3>
+        <p class="mdc-typography--caption">Per Person</p>
+        <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+        <center><button class="mdc-button--dense holyday_btn2">
+          <span class="mdc-button__label ">VIEW MORE</span>
+        </button></center>
+      </div>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="holyday">
+        <label>(3N/4D)</label>
+        <h3 class="holyday_txt3">Rs.6800</h3>
+        <p class="mdc-typography--caption">Per Person</p>
+        <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+        <center><button class="mdc-button--dense holyday_btn3">
+          <span class="mdc-button__label ">VIEW MORE</span>
+        </button></center>
+      </div>
+
+    </div>
+
+    <div class="mdc-layout-grid__cell--span-1">
+
+
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="mdc-layout-grid__inner">
+
+  <div class="mdc-layout-grid__cell--span-2">
+
+
+  </div>
+
+  <div class="mdc-layout-grid__cell--span-3">
+
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt1">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn1">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt2">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn2">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt3">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn3">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+
+  <div class="mdc-layout-grid__cell--span-1">
+
+
+  </div>
+
+
+</div>
+
+</div>
+
+<div class="mdc-layout-grid__inner">
+
+  <div class="mdc-layout-grid__cell--span-2">
+
+
+  </div>
+
+  <div class="mdc-layout-grid__cell--span-3">
+
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt1">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn1">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt2">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn2">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <div class="holyday">
+      <label>(3N/4D)</label>
+      <h3 class="holyday_txt3">Rs.6800</h3>
+      <p class="mdc-typography--caption">Per Person</p>
+      <p style="text-align: center;">Bali 4 Star Package for 4 Days</p>
+      <center><button class="mdc-button--dense holyday_btn3">
+        <span class="mdc-button__label ">VIEW MORE</span>
+      </button></center>
+    </div>
+
+  </div>
+
+  <div class="mdc-layout-grid__cell--span-1">
+  </div>
+</div>
+
+</div>
+
+
+<div class="contentHeading">
+  <h2>Recent Traveller<span> Reviews</span></h2>
+  <h1><span>_ </span>_ <span>_ </span></h1>
+</div>
+
+<div class="recentTravel">
+  <img src="images/person.jpg" >
+  <h3>John Doe</h3>
+  <p><span>Director, We Care Holidays</span></p>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
+
+</div>
+
+
+<div class="mdc-layout-grid footer">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-2">
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <p class="mdc-typography--headline6 footer_about">ABOUT US</p>
+      <p class="f_about_p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-2">
+          <img src="images/logo.png" height="50px" width="50px" class="f_img">
+        </div>
+        <div class="mdc-layout-grid__cell--span-10">
+          <p class="f_about_p">Street addresses: 445 Mount Eden Road, Mount Eden, Auckland.
+            Rural addresses: 21 Greens Road RD 2 Ruawai 0592.
+            Partial addresses: Main Highway Otaki; 32 Wilson Street.
+          Postcodes: 5022.</p>
+        </div>  
+      </div>  
+
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-1"></div>
+    <div class="mdc-layout-grid__cell--span-6">
+      <p class="mdc-typography--headline6 footer_destination">OUR DESTINATIONSS</p>
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-2 f_margin">
+          <p class="mdc-typography--subtitle f_title1">EUROPE</p>
+          <p class="f_about_p"><label class="f_title1">></label> Austria</p>
+          <p class="f_about_p"><label class="f_title1">></label> India</p>
+          <p class="f_about_p"><label class="f_title1">></label> New York</p>
+          <p class="f_about_p"><label class="f_title1">></label> Orlando</p>
+          <p class="f_about_p"><label class="f_title1">></label> Russia</p>
+          <p class="f_about_p"><label class="f_title1">></label> Spain</p>
+          <p class="f_about_p"><label class="f_title1">></label> Switserland</p>
+          <p class="f_about_p"><label class="f_title1">></label> France</p>
+
+
+        </div>
+        <div class="mdc-layout-grid__cell--span-2  f_margin">
+          <p class="mdc-typography--subtitle footer_destination">INDIA</p>
+          <p class="f_about_p"><label class="footer_destination">></label> Austria</p>
+          <p class="f_about_p"><label class="footer_destination">></label> India</p>
+          <p class="f_about_p"><label class="footer_destination">></label> New York</p>
+          <p class="f_about_p"><label class="footer_destination">></label> Orlando</p>
+          <p class="f_about_p"><label class="footer_destination">></label> Russia</p>
+          <p class="f_about_p"><label class="footer_destination">></label> Spain</p>
+          <p class="f_about_p"><label class="footer_destination">></label> Switserland</p>
+          <p class="f_about_p"><label class="footer_destination">></label> France</p>
+          <p class="f_about_p"><label class="f_title1">></label> New York</p>
+          <p class="f_about_p"><label class="f_title1">></label> Orlando</p>
+
+
+        </div>
+        <div class="mdc-layout-grid__cell--span-2  f_margin">
+          <p class="mdc-typography--subtitle f_title3">USA</p>
+          <p class="f_about_p"><label class="f_title3">></label> Austria</p>
+          <p class="f_about_p"><label class="f_title3">></label> India</p>
+          <p class="f_about_p"><label class="f_title3">></label> New York</p>
+          <p class="f_about_p"><label class="f_title3">></label> Orlando</p>
+          <p class="f_about_p"><label class="f_title3">></label> Switserland</p>
+          <p class="f_about_p"><label class="f_title3">></label> France</p>
+
+        </div>
+        <div class="mdc-layout-grid__cell--span-2  f_margin">
+          <p class="mdc-typography--subtitle f_title4">FAR EAST</p>
+          <p class="f_about_p"><label class="f_title4">></label> Austria</p>
+          <p class="f_about_p"><label class="f_title4">></label> India</p>
+          <p class="f_about_p"><label class="f_title4">></label> New York</p>
+          <p class="f_about_p"><label class="f_title4">></label> Orlando</p>
+          <p class="f_about_p"><label class="f_title4">></label> Russia</p>
+          <p class="f_about_p"><label class="f_title4">></label> Spain</p>
+          <p class="f_about_p"><label class="f_title4">></label> Switserland</p>
+          <p class="f_about_p"><label class="f_title4">></label> France</p>
+          <p class="f_about_p"><label class="f_title5">></label> Russia</p>
+          <p class="f_about_p"><label class="f_title5">></label> Spain</p>
+
+        </div>
+        <div class="mdc-layout-grid__cell--span-4  f_margin">
+          <p class="mdc-typography--subtitle f_title5">AFRICA</p>
+          <p class="f_about_p"><label class="f_title5">></label> Austria</p>
+          <p class="f_about_p"><label class="f_title5">></label> India</p>
+          <p class="f_about_p"><label class="f_title5">></label> New York</p>
+          <p class="f_about_p"><label class="f_title5">></label> Orlando</p>
+          <p class="mdc-typography--subtitle f_title6">MIDDLE EAST</p>
+          <p class="f_about_p"><label class="f_title6">></label> Russia</p>
+          <p class="f_about_p"><label class="f_title6">></label> Spain</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid__inner footer_bottom">
+    <div class="mdc-layout-grid__cell--span-12">
+      <center><p>@ 2018 TMG.All Rights Reserved</p></center>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
